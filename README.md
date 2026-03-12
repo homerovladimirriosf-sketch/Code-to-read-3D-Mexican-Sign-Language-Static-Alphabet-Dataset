@@ -47,3 +47,11 @@ The statistical analysis of the dataset shows that the number of 3D points for e
 - Average: 3232 (rounded value) 3D points
 - Maximum: 7341 3D points
 - Standard deviation: 1077 (rounded value)
+
+## Example code in three languages (Matlab, Python, C++) to load data from a point cloud and plot it
+
+A matlab file is provided.
+
+A Phython project is provided.
+
+A C++ project is also provided.
