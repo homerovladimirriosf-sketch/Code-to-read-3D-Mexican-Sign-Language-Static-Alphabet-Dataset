@@ -1,0 +1,8 @@
+﻿<Window x:Class="KinectApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:hx="http://helix-toolkit.org/wpf"
+        Title="Visor Kinect v1" Height="600" Width="800">
+    <Grid x:Name="MainGrid">
+    </Grid>
+</Window>
