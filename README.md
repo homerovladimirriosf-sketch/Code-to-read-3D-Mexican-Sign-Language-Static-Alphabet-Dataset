@@ -48,10 +48,18 @@ The statistical analysis of the dataset shows that the number of 3D points for e
 - Maximum: 7341 3D points
 - Standard deviation: 1077 (rounded value)
 
-## Example code in three languages (Matlab, Python, C++) to load data from a point cloud and plot it
+## Example code in three languages (MATLAB, Python, C++) to load data from a point cloud and plot it
 
 A matlab file is provided.
 
 A Phython project is provided.
 
 A C# project is also provided.
+
+## Example code in MATLAB to segment a point cloud using a plane
+
+segmenta_nube_plano_Git_202603.m is the MATLAB code to segment
+
+prism.txt is a synthetic point cloud with 6 vertices that define a 3D prism
+
+
