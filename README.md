@@ -75,4 +75,8 @@ segmenta_nube_plano_Git_202603.m is the MATLAB code to segment
 
 prism.txt is a synthetic point cloud with 6 vertices that define a 3D prism
 
+## Index file.csv
+
+
+
 
