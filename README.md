@@ -89,3 +89,6 @@ prism.txt is a synthetic point cloud with 6 vertices that define a 3D prism
 Machine readable index file (excel file .csv), listing all samples in the dataset with their file name,  class labels,  participant identifiers and point cloud counts
 
 
+## Recommended processing steps
+
+Machine r
