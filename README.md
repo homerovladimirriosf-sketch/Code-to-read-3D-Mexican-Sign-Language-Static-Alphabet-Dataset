@@ -27,12 +27,19 @@ A folder named with uppercase, for instance, “A”, is used for the class shap
 For example, file a1.txt, its corresponding class label is letter “A”, it has 1618 point. The data in this file can be read in a matrix of 1618 rows and 3 columns corresponding to the (X,Y,Z) coordinates. A simplified matrix representation showing the first two rows and the last two rows is represented in Table 1.
 
 Rows	Column 1 = X coordinate	Column 2 = Y coordinate 	Column 3 = Z coordinate
+
 Row 1	0.123009	              0.920465	                0.124559
+
 Row 2	0.121412	              0.944210	                0.079560
+
     …	   …	                  …	                         …
+    
     …	   …	                  …	                         …
+    
 Row 1617	-0.723007	          -0.196166	                -0.112065
+
 Row 1618	-0.739257	          -0.290998	                -0.004261
+
 
 Table 1. Matrix representation of the data in file a1.txt which has 1618 points.  
 
