@@ -91,4 +91,27 @@ Machine readable index file (excel file .csv), listing all samples in the datase
 
 ## Recommended processing steps
 
-Machine r
+Point clouds can be normalized before processing.
+
+One standard processing step is to normalize the point cloud to a coordinate systems centered on the cloud centroid.
+This normalization makes point coordinates invariant to translation.
+
+if (Xc, Yc, Zc) is the computed centroid as 1/n* Sum (Xi,Yi,Zi), then the new normalized coordinates
+can be computed as Xnew = Xold - Xc, Ynew = Yold-Yc, Znew = Zold - Zc.
+
+To normalize in scale for example to fit a point cloud inside a sphere of radious 1. A search can be done of the
+point farthest from the centroid as measured with Euclidean distance. If this distance is DistMax, then the coordinates
+of a new point cloud that is both centered at the origin and inside a sphere of radius 1, can be computed as follows:
+(Xnew2,Ynew2,Znew2) = (Xnew, Ynew, Znew)/DistMax, if DistMax is different from zero. 
+
+This normalization makes all point cloud normalized in scale.
+
+Additional normalization steps can be taken to normalize in 3D rotation. One useful reference for options in 
+doing this is: J. Flusser, T Suk, B. Zitova. 2D and 3D Image Analysis by Moments, first ed., Wiley, 2016.
+
+Once the point clouds are normalized using possible route following traditional AI is to develop a method to extract features using "hand crafted" features. 
+
+Finally, the dataset can be randomly partitioned and use the developed method to train and test on cross validations portions of the dataset. The predicted classes on the test set can be compared with the actual classes to compute confussion matrices, and from there obtain classification metrics.
+
+Other possible route is to do data augmentation on the data set to generate more samples, then design and apply an end to end neural network to train directly on the dataset, and afterward test its performance on the test set.
+
