@@ -24,6 +24,21 @@ For example, for letter A, the files are a1.txt, a2.txt… a15.txt.
 This naming convention is consistent across the dataset.  
 A folder named with uppercase, for instance, “A”, is used for the class shape, and the 15 specific instances are named with lowercase.
 
+
+## File Contents
+
+Each text file has as many lines as the letter has 3D points for its spatial representation.  
+Each line is composed of three floating point numbers that provide the coordinates (X, Y, Z) of a 3D point.
+
+The coordinates (X, Y, Z) are in meter units.  
+The MS Kinect V.1 sensor coordinate system for depth image acquisition is at the center of the depth camera.  
+The coordinate system follows a right-handed convention.  
+- The X horizontal axis points to the left (from the perspective of the sensor)
+- The Y vertical axis points upward
+- The Z depth axis points forward in the direction that the camera is facing
+
+From the 3D data in the text file, it is possible to recover the geometrical and graphical representation.
+
 For example, file a1.txt, its corresponding class label is letter “A”, it has 1618 point. The data in this file can be read in a matrix of 1618 rows and 3 columns corresponding to the (X,Y,Z) coordinates. A simplified matrix representation showing the first two rows and the last two rows is represented in Table 1.
 
 Rows	Column 1 = X coordinate	Column 2 = Y coordinate 	Column 3 = Z coordinate
@@ -44,19 +59,6 @@ Row 1618	-0.739257	          -0.290998	                -0.004261
 Table 1. Matrix representation of the data in file a1.txt which has 1618 points.  
 
 
-## File Contents
-
-Each text file has as many lines as the letter has 3D points for its spatial representation.  
-Each line is composed of three floating point numbers that provide the coordinates (X, Y, Z) of a 3D point.
-
-The coordinates (X, Y, Z) are in meter units.  
-The MS Kinect V.1 sensor coordinate system for depth image acquisition is at the center of the depth camera.  
-The coordinate system follows a right-handed convention.  
-- The X horizontal axis points to the left (from the perspective of the sensor)
-- The Y vertical axis points upward
-- The Z depth axis points forward in the direction that the camera is facing
-
-From the 3D data in the text file, it is possible to recover the geometrical and graphical representation.
 
 ## Data Statistics
 
