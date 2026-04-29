@@ -109,7 +109,7 @@ This normalization makes all point cloud normalized in scale.
 Additional normalization steps can be taken to normalize in 3D rotation. One useful reference for options in 
 doing this is: J. Flusser, T Suk, B. Zitova. 2D and 3D Image Analysis by Moments, first ed., Wiley, 2016.
 
-Once the point clouds are normalized using possible route following traditional AI is to develop a method to extract features using "hand crafted" features. 
+Once the point clouds are normalized one possible route following traditional AI is to develop a method to extract features using "hand crafted" features. 
 
 Finally, the dataset can be randomly partitioned and use the developed method to train and test on cross validations portions of the dataset. The predicted classes on the test set can be compared with the actual classes to compute confussion matrices, and from there obtain classification metrics.
 
