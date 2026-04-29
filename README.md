@@ -115,3 +115,6 @@ Finally, the dataset can be randomly partitioned and use the developed method to
 
 Other possible route is to do data augmentation on the data set to generate more samples, then design and apply an end to end neural network to train directly on the dataset, and afterward test its performance on the test set.
 
+## Example Matlab code normaliza_coord_escala_multiple_20260424
+
+This code read a point cloud and produces a new point cloud that is normalized in translation. The new point cloud is centered around the Cartesian coordinates origin (0,0,0). Also the new point cloud is normalized in scale to fit inside a sphere of radious one.
